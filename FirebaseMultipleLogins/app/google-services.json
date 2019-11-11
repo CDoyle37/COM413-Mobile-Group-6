@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1042043171114",
+    "firebase_url": "https://fir-multiplelogins.firebaseio.com",
+    "project_id": "fir-multiplelogins",
+    "storage_bucket": "fir-multiplelogins.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042043171114:android:d504c0b62e3349cd1b2e53",
+        "android_client_info": {
+          "package_name": "com.example.firebasemultiplelogins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042043171114-ejrici67ful06n37jtbplj1a924jb7mp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasemultiplelogins",
+            "certificate_hash": "c2e4315f5badd35cb296c8a96f4738937579fc4b"
+          }
+        },
+        {
+          "client_id": "1042043171114-49qvstugtrelui1v7p6hjl0fq8gi1v7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCgD_M4dM603PSWtXhVFOiwibyHjtM2V0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042043171114-49qvstugtrelui1v7p6hjl0fq8gi1v7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
