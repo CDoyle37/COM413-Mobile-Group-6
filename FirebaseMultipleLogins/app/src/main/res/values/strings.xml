@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">FirebaseMultipleLogins</string>
+    <string name="app_name">ParkingApp</string>
+    <string name="mageeButton">Magee</string>
+    <string name="jordanstownButton">Jordanstown</string>
+    <string name="coleraineButton">Coleraine</string>
+    <string name="belfastButton">Belfast</string>
+    <string name="mageeCarparkMainButton">Main Car Park</string>
+    <string name="mageeCarparkNorthlandRoadEntranceButton">Northland Road Car Park</string>
+    <string name="mageeCarparkRockRoadButton">Rock Road Car Park</string>
+    <string name="mageeCarparkStrandRoadButton">MS Car Park</string>
+    <string name="mageeMainParkingPageTextView">Magee Main Car Park Map</string>
+    <string name="info_button">Info button</string>
+    <string name="infoScreenTextView">Further information about the application</string>
+    <string name="mageeStatisticsButton">Magee Car Park Statistics</string>
+    <string name="available_spaces">available spaces</string>
+    <string name="distance">distance</string>
+    <string name="location_img">location image</string>
+    <string name="mageeStatisticsTextView">Magee Campus Statistics</string>
+    <string name="mageeStatisticsExplanation">Further explain the graph</string>
+    <string name="mageeMainPilotProgramme">Explanation of pilot programme</string>
     <string name="facebook_application_id" translatable="false">1146704015526618</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb1146704015526618</string>
-
 </resources>
