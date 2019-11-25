@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int MY_REQUEST_CODE = 1234;
     List<AuthUI.IdpConfig> providers;
-    Button btn_signOut;
+    ImageView btn_signOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+
         providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build(),
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showSignInOptions() {
-        startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).setTheme(R.style.AppTheme).build(), MY_REQUEST_CODE);
+        startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).setTheme(R.style.LoginTheme).setLogo(R.mipmap.logo).build(), MY_REQUEST_CODE);
     }
 
     @Override

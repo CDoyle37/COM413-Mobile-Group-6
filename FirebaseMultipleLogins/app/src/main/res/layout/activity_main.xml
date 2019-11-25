@@ -4,96 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/buttonMagee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="200dp"
-        android:height="70dp"
-        android:onClick="showMageePage"
-        android:text="@string/mageeButton"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
-
-    <Button
-        android:id="@+id/buttonJordanstown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:width="200dp"
-        android:height="70dp"
-        android:text="@string/jordanstownButton"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMagee"
-        app:layout_constraintVertical_bias="0.074" />
-
-    <Button
-        android:id="@+id/buttonColeraine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:width="200dp"
-        android:height="70dp"
-        android:text="@string/coleraineButton"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonJordanstown"
-        app:layout_constraintVertical_bias="0.102" />
-
-    <Button
-        android:id="@+id/buttonBelfast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:width="200dp"
-        android:height="70dp"
-        android:text="@string/belfastButton"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonColeraine"
-        app:layout_constraintVertical_bias="0.151" />
 
     <ImageButton
         android:id="@+id/infoImgButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@color/colorPrimary"
         android:contentDescription="@string/info_button"
         android:onClick="showInfoPage"
+        android:tint="@color/colorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintVertical_bias="0.034"
         app:srcCompat="@drawable/info_img" />
 
-    <Button
-        android:id="@+id/button_SignOut"
+    <ImageView
+        android:id="@+id/buttonMagee"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="88dp"
+        android:clickable="true"
+        android:onClick="showMageePage"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/magee" />
+
+    <ImageView
+        android:id="@+id/buttonJordanstown"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMagee"
+        app:srcCompat="@mipmap/jordanstown" />
+
+    <ImageView
+        android:id="@+id/buttonColeraine"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonJordanstown"
+        app:srcCompat="@mipmap/coleraine" />
+
+    <ImageView
+        android:id="@+id/buttonColeraine2"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonColeraine"
+        app:srcCompat="@mipmap/belfast" />
+
+    <TextView
+        android:id="@+id/textMagee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="32dp"
-        android:text="Log Out"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="@string/mageeButton"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMagee"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMagee"
+        app:layout_constraintStart_toStartOf="@+id/buttonMagee"
+        app:layout_constraintTop_toTopOf="@+id/buttonMagee" />
+
+    <TextView
+        android:id="@+id/textCampuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="4"
+        android:text="@string/selectCampus"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorSecondary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMagee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBelfast" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textJordanstown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="false"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="@string/jordanstownButton"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonJordanstown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonJordanstown"
+        app:layout_constraintTop_toTopOf="@+id/buttonJordanstown" />
+
+    <TextView
+        android:id="@+id/textColeraine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="@string/coleraineButton"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonColeraine"
+        app:layout_constraintEnd_toEndOf="@+id/buttonColeraine"
+        app:layout_constraintStart_toStartOf="@+id/buttonColeraine"
+        app:layout_constraintTop_toTopOf="@+id/buttonColeraine" />
+
+    <TextView
+        android:id="@+id/textBelfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="@string/belfastButton"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonColeraine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonColeraine2"
+        app:layout_constraintTop_toTopOf="@+id/buttonColeraine2" />
+
+    <ImageView
+        android:id="@+id/button_SignOut"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/signout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

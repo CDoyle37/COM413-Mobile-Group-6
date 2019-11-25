@@ -20,4 +20,5 @@
     <string name="mageeMainPilotProgramme">Explanation of pilot programme</string>
     <string name="facebook_application_id" translatable="false">1146704015526618</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb1146704015526618</string>
+    <string name="selectCampus">Campuses</string>
 </resources>
