@@ -10,6 +10,7 @@
         android:id="@+id/distanceTextView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:text="@string/distance"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,14 +51,13 @@
         android:id="@+id/distanceTextView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
         android:text="@string/distance"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776" />
@@ -66,6 +66,7 @@
         android:id="@+id/distanceTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:text="@string/distance"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,8 +78,8 @@
 
     <ImageView
         android:id="@+id/locationImg2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
         android:contentDescription="@string/location_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -218,14 +219,15 @@
         android:id="@+id/distanceTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:text="@string/distance"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.219" />
 
     <ImageView
         android:id="@+id/locationImg1"
