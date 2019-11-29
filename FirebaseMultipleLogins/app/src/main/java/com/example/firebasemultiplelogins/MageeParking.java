@@ -78,7 +78,11 @@ public class MageeParking extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Method called once with initial value and again whenever data at this location is updated
                 String value = dataSnapshot.getValue(String.class);
-                spacesMain.setText(value + " spaces");
+                if (value.equals("0")) {
+                    spacesMain.setText("Full Capacity");
+                } else {
+                    spacesMain.setText(value + " spaces");
+                }
             }
 
             @Override
@@ -92,7 +96,11 @@ public class MageeParking extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Method called once with initial value and again whenever data at this location is updated
                 String value = dataSnapshot.getValue(String.class);
-                spacesMS.setText(value + " spaces");
+                if (value.equals("0")) {
+                    spacesMS.setText("Full Capacity");
+                } else {
+                    spacesMS.setText(value + " spaces");
+                }
             }
 
             @Override
@@ -106,7 +114,11 @@ public class MageeParking extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Method called once with initial value and again whenever data at this location is updated
                 String value = dataSnapshot.getValue(String.class);
-                spacesNorthland.setText(value + " spaces");
+                if (value.equals("0")) {
+                    spacesNorthland.setText("Full Capacity");
+                } else {
+                    spacesNorthland.setText(value + " spaces");
+                }
             }
 
             @Override
@@ -120,7 +132,11 @@ public class MageeParking extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Method called once with initial value and again whenever data at this location is updated
                 String value = dataSnapshot.getValue(String.class);
-                spacesRockrd.setText(value + " spaces");
+                if (value.equals("0")) {
+                    spacesRockrd.setText("Full Capacity");
+                } else {
+                    spacesRockrd.setText(value + " spaces");
+                }
             }
 
             @Override
