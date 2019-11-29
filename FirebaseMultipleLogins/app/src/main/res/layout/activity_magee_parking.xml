@@ -4,48 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MageeParking">
 
+    <Button
+        android:id="@+id/buttonStrandRoadCarParl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="70dp"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/mageeCarparkStrandRoadButton"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
+
     <TextView
-        android:id="@+id/distanceTextView3"
+        android:id="@+id/availableSpacesNorthland"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="@string/distance"
+        android:text="@string/available_spaces"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNorthlandCarPark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617" />
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/buttonNorthlandCarPark" />
 
-    <ImageView
-        android:id="@+id/locationImg4"
+    <Button
+        android:id="@+id/buttonNorthlandCarPark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
-        android:contentDescription="@string/location_img"
+        android:width="200dp"
+        android:height="70dp"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/mageeCarparkNorthlandRoadEntranceButton"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStrandRoadCarParl"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_location_on_black_24dp" />
-
-    <ImageView
-        android:id="@+id/locationImg3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/location_img"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615"
-        app:srcCompat="@drawable/ic_location_on_black_24dp" />
+        app:layout_constraintVertical_bias="0.361" />
 
     <TextView
         android:id="@+id/distanceTextView4"
@@ -54,55 +61,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
         android:text="@string/distance"
+        android:textColor="@color/browser_actions_bg_grey"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
-
-    <TextView
-        android:id="@+id/distanceTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="@string/distance"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
-
-    <ImageView
-        android:id="@+id/locationImg2"
-        android:layout_width="31dp"
-        android:layout_height="24dp"
-        android:contentDescription="@string/location_img"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422"
-        app:srcCompat="@drawable/ic_location_on_black_24dp" />
-
-    <Button
-        android:id="@+id/buttonStrandRoadCarParl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="200dp"
-        android:height="70dp"
-        android:text="@string/mageeCarparkStrandRoadButton"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/buttonMainCarPark"
@@ -110,15 +76,99 @@
         android:layout_height="wrap_content"
         android:width="200dp"
         android:height="70dp"
+        android:background="@drawable/btn_rounded"
         android:onClick="showMageeMainCarparkPage"
         android:text="@string/mageeCarparkMainButton"
+        android:textColor="@color/browser_actions_bg_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124" />
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/distanceTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/distance"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <ImageView
+        android:id="@+id/locationImg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/location_img"
+        android:tint="@color/browser_actions_bg_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+    <TextView
+        android:id="@+id/availableSpacesMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/available_spaces"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMainCarPark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMainCarPark" />
+
+    <TextView
+        android:id="@+id/availableSpacesRockRoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/available_spaces"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonRockRoadCarPark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/buttonRockRoadCarPark" />
+
+    <TextView
+        android:id="@+id/distanceTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/distance"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <ImageView
+        android:id="@+id/locationImg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/location_img"
+        android:tint="@color/browser_actions_bg_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
 
     <Button
         android:id="@+id/buttonRockRoadCarPark"
@@ -126,40 +176,84 @@
         android:layout_height="wrap_content"
         android:width="200dp"
         android:height="70dp"
+        android:background="@drawable/btn_rounded"
         android:text="@string/mageeCarparkRockRoadButton"
+        android:textColor="@color/browser_actions_bg_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.567" />
 
-    <Button
-        android:id="@+id/buttonNorthlandCarPark"
+    <TextView
+        android:id="@+id/distanceTextView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="200dp"
-        android:height="70dp"
-        android:text="@string/mageeCarparkNorthlandRoadEntranceButton"
-        android:textSize="18sp"
+        android:layout_marginStart="32dp"
+        android:text="@string/distance"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="0.639" />
+
+    <TextView
+        android:id="@+id/availableSpacesMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/available_spaces"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonStrandRoadCarParl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/buttonStrandRoadCarParl" />
+
+    <ImageView
+        android:id="@+id/locationImg2"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/location_img"
+        android:tint="@color/browser_actions_bg_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+    <ImageView
+        android:id="@+id/locationImg4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/location_img"
+        android:tint="@color/browser_actions_bg_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStrandRoadCarParl"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
 
     <Button
         android:id="@+id/buttonStatistics"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:background="@drawable/btn_rounded"
         android:onClick="showMageeStatistics"
         android:text="@string/mageeStatisticsButton"
+        android:textColor="@color/browser_actions_bg_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -169,77 +263,19 @@
         app:layout_constraintVertical_bias="0.938" />
 
     <TextView
-        android:id="@+id/availableSpacesMain"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/available_spaces"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMainCarPark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/buttonMainCarPark" />
-
-    <TextView
-        android:id="@+id/availableSpacesNorthland"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/available_spaces"
-        android:textStyle="italic"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNorthlandCarPark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/buttonNorthlandCarPark" />
-
-    <TextView
-        android:id="@+id/availableSpacesRockRoad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/available_spaces"
-        android:textStyle="italic"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonRockRoadCarPark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/buttonRockRoadCarPark" />
-
-    <TextView
-        android:id="@+id/availableSpacesMS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/available_spaces"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonStrandRoadCarParl"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toEndOf="@+id/buttonStrandRoadCarParl" />
-
-    <TextView
-        android:id="@+id/distanceTextView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="@string/distance"
-        android:textStyle="italic"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowRadius="4"
+        android:text="@string/mageeCampusTitleTextView"
+        android:textColor="@color/colorSecondary"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
-
-    <ImageView
-        android:id="@+id/locationImg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/location_img"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22"
-        app:srcCompat="@drawable/ic_location_on_black_24dp" />
+        app:layout_constraintVertical_bias="0.042" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

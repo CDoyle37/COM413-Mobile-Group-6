@@ -4,31 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MageeMainCarpark">
 
     <TextView
         android:id="@+id/mageeMainCarParkTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="278dp"
+        android:layout_height="80dp"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowRadius="4"
         android:text="@string/mageeMainParkingPageTextView"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.167" />
-
-    <TextView
-        android:id="@+id/mageeMainCarParkExplanation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mageeMainPilotProgramme"
-        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondary"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/mageeMainCarParkExplanation"
+        android:layout_width="360dp"
+        android:layout_height="140dp"
+        android:text="We are piloting a system of individual sensors in this car park to show the exact spaces that are available. As shown in the graphic above, available spaces are coloured green and unavailable spaces are red."
+        android:textAlignment="center"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
 </androidx.constraintlayout.widget.ConstraintLayout>

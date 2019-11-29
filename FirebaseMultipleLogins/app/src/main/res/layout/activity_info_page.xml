@@ -4,18 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".InfoPage">
 
     <TextView
         android:id="@+id/infoPageTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/infoScreenTextView"
-        android:textSize="18sp"
+        android:layout_width="307dp"
+        android:layout_height="543dp"
+        android:text="This application is designed for people who regularly park on Ulster University campuses and have difficulty finding parking spaces. \n\n We use sensors and automated data gathering to determine the number of available spaces in each car park, on each campus. \n\n We are piloting a system of individual sensors in Magee's main car park to show the exact spaces that are available per cark park. \n\nWe are also analysing the data to display the busiest parking times. in graph form \n\n"
+        android:textAlignment="center"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintVertical_bias="0.914" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowRadius="4"
+        android:text="@string/infoPageTitle"
+        android:textColor="@color/colorSecondary"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

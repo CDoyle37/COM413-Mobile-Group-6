@@ -4,30 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MageeStatistics">
 
     <TextView
         android:id="@+id/mageeStatisticsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="101dp"
+        android:shadowColor="@color/colorPrimaryLight"
+        android:shadowRadius="4"
         android:text="@string/mageeStatisticsTextView"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
-
-    <TextView
-        android:id="@+id/mageeStatisticsExplanation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mageeStatisticsExplanation"
-        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondary"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/mageeStatisticsExplanation"
+        android:layout_width="360dp"
+        android:layout_height="107dp"
+        android:text="The graph above shows the exact available spaces against the time of day. "
+        android:textAlignment="center"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
 </androidx.constraintlayout.widget.ConstraintLayout>
