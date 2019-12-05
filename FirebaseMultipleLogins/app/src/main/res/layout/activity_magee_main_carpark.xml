@@ -28,6 +28,8 @@
         android:id="@+id/mageeMainCarParkExplanation"
         android:layout_width="360dp"
         android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:text="We are piloting a system of individual sensors in this car park to show the exact spaces that are available. As shown in the graphic above, available spaces are coloured green and unavailable spaces are red."
         android:textAlignment="center"
         android:textColor="@color/browser_actions_bg_grey"
@@ -38,4 +40,269 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.927" />
+
+    <ImageView
+        android:id="@+id/space1"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space2"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space1"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space3"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space4"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space3"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space5"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/space4"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space6"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space7"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space7"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space8"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space8"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space9"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space9"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space10"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space10"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mageeMainCarParkTitle"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space11"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space1"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space12"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space1"
+        app:layout_constraintTop_toBottomOf="@+id/space2"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space13"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/space3"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space14"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/space3"
+        app:layout_constraintTop_toBottomOf="@+id/space4"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space15"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/space4"
+        app:layout_constraintTop_toBottomOf="@+id/space5"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space16"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space7"
+        app:layout_constraintTop_toBottomOf="@+id/space6"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space17"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space8"
+        app:layout_constraintTop_toBottomOf="@+id/space7"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space18"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space9"
+        app:layout_constraintTop_toBottomOf="@+id/space8"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space19"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/space10"
+        app:layout_constraintTop_toBottomOf="@+id/space9"
+        app:srcCompat="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/space20"
+        android:layout_width="31dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/browser_actions_title_color"
+        android:cropToPadding="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space10"
+        app:srcCompat="@color/colorPrimaryLight" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
